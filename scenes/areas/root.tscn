@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpwxwiw0rufmy"]
+
+[ext_resource type="Script" path="res://scripts/camera.gd" id="1_q0hvm"]
+[ext_resource type="PackedScene" uid="uid://dfx1pkui17cv3" path="res://scenes/player.tscn" id="2_r4tok"]
+
+[node name="root" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+script = ExtResource("1_q0hvm")
+
+[node name="Player" parent="." instance=ExtResource("2_r4tok")]
+unique_name_in_owner = true
